@@ -1,0 +1,15 @@
+ awk -F ','
+
+ awk -F ',' '{ print $3 $4 $5 $6 $7 $8 $9 }' Roulette_Losses
+cut -f 1-9 Roulette_Losses
+
+Remove All Leading Whitespaces (Including Spaces and Tabs)
+cat Roulette_Losses | sed 's/^[ \t]*//'
+
+Remove both Leading and Trailing Whitespaces
+cat Roulette_Losses | sed 's/^[ \t]*//;s/[ \t]*$//'
+
+Awk-Group count of field
+ awk ' { arr[$0]++ } END { for( no in arr) { print no , arr[no] } } ' Roulette_Losses
+
+awk -F',' 'FNR>1 && $2!~/^E/{count++} END{print count+0}' Roulette_Losses

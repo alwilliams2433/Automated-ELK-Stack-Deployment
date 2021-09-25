@@ -194,5 +194,13 @@ ELK Server monitors the following Machines:
 7. https://www.chaossearch.io/blog/elk-stack-pros-and-cons
 8. https://docs.microsoft.com/en-us/azure/governance/policy/overview
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> 686c9a33f785c3257975be12bf503975cd14a4c3
+=======
+
+
+>>>>>>> 686c9a33f785c3257975be12bf503975cd14a4c3
