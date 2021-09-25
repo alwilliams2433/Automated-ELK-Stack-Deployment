@@ -62,7 +62,7 @@ The number of level of requests to the load balancers is usually determined by t
 •	Leverage a jump server, jump host or jump box which is essentially a separate security system used manage network devices. 
 •	Capable of re-routing or distributing live traffic from one server to another eliminating a single points of failure from attacks such as DDoS attack.3
 
-What is the purpose of the Jump-box?
+Using Jump-box
 
 A jump server, jump host or jump box is a system on a network used to access and manage devices in a separate security zone. A jump server is a hardened and monitored device that spans two dissimilar security zones and provides a controlled means of access between them.4  In other words, a resource to mitigate or prevent potential hackers to penetrate  or infect the system that is critical or provides  additional configuration to improve overall functionality. It is a hardened remote access server, commonly utilizing Microsoft's Remote Desktop Services or Secure Shell (SSH) software. Administrators have the ability to perform all or most of their administrative tasks via a jump box.
 
@@ -174,7 +174,9 @@ Additional Validation steps:
 •	If changed amend: SSH azureuser@XX.X.X.X (IP address changes)
 •	cd etc/ansible/roles
 •	sudo ansible-playbook pentest.yml
+
 ELK Server monitors the following Machines:
+
 •	NewVM-1 (10.1.0.13) 
 •	NewVM-2 (10.1.0.14)
 •	Filebeat_playbook.yml
